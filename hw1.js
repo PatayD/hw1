@@ -1,5 +1,5 @@
 let chek = 'bread28muka31.23soli250'
-let invalidChek = 'bread28.1muka24.31soli250.232627' 
+let invalidChek = 'bread28.1muka24.31soli250.232627' //он выбивает что чек неверный но сумму все равно считает
 
 function Numb(str) {
     let result = str.match(/(-?\d+(\.\d+)?)/g).map(v => +v);
@@ -18,4 +18,4 @@ function Numb(str) {
 
 }
 
-Numb(invalidChek)
+Numb(chek)
